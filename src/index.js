@@ -7,7 +7,6 @@ app.listen(3333);
 
 app.use(express.json());
 
-// Middleware
 function verifyIfExistsAccountCPF(request, response, next) {
     const { cpf } = request.headers;
 
